@@ -1,0 +1,61 @@
+button {
+  color: transparent !important;
+  font-size: 0 !important;
+  position: relative;
+  &:hover {
+    font-weight: bold;
+  }
+
+  &::before {
+    content: attr(data-text) / '';
+    font-size: 16px;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+    font-weight: bold;
+  }
+
+  &::after {
+    content: attr(data-text) / '';
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+  }
+}
+
+.button-hover-not-jump {
+  color: transparent !important;
+  font-size: 0 !important;
+  position: relative;
+  &:hover {
+    font-weight: bold;
+  }
+
+  &::before {
+    content: attr(data-text) / '';
+    font-size: 16px;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+    font-weight: bold;
+  }
+
+  &::after {
+    content: attr(data-text) / '';
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+  }
+}
+
+@import '../node_modules/bootstrap/scss/bootstrap';

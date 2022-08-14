@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js"></script>
+  </head>
+
+  <body class="p-4">
+    <!-- Remember - use of buttons text is not necessary ! -->
+    <button data-text="Success button" class="btn btn-success"></button>
+
+    <!-- However - when user will use buttons inner text it will change nothing ! -->
+    <button data-text="Primary button" class="btn btn-primary">
+      Primary button ????????????????????????
+    </button>
+
+    <!-- But - when user will not use data-text attribute styling will fail ! -->
+    <button class="btn btn-danger">Danger button</button>
+
+    <!-- Alternatively; - you can pack css code to class and use it! -->
+    <div
+      data-text="I use class ;)"
+      class="btn btn-secondary button-hover-not-jump"
+    ></div>
+  </body>
+</html>
